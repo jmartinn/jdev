@@ -933,7 +933,7 @@
   resolved "https://registry.yarnpkg.com/@sanity/timed-out/-/timed-out-4.0.2.tgz#c9f61f9a1609baa1eb3e4235a24ea2a775022cdf"
   integrity sha512-NBDKGj14g9Z+bopIvZcQKWCzJq5JSrdmzRR1CS+iyA3Gm8SnIWBfZa7I3mTg2X6Nu8LQXG0EPKXdOGozLS4i3w==
 
-"@sanity/types@3.2.4", "@sanity/types@^3":
+"@sanity/types@3.2.4", "@sanity/types@^3", "@sanity/types@^3.2.4":
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/@sanity/types/-/types-3.2.4.tgz#943aad7097190b455a16e8ebc4a04f3ef9df2566"
   integrity sha512-LW6H6MA/gEdWXSjhUdhG7uQ7ueY9JP8XPrAmSeTzIPVuyhIUQQnMtKLVvlLNNo4kw7v1bg7nT/2JfHH9MnrCWg==
@@ -941,7 +941,7 @@
     "@sanity/client" "^4.0.1"
     "@types/react" "^18.0.25"
 
-"@sanity/ui@^1.0.0":
+"@sanity/ui@^1.0.0", "@sanity/ui@^1.0.14":
   version "1.0.14"
   resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-1.0.14.tgz#3f5773fc7668ad73a5a44781659c4be3b4e53215"
   integrity sha512-+f/hOk9PMz9Vnd3G2yrfCXrYsJKai+BmHHQfquv+5ZPNsdZgQlQuDZ5h2qAEaEtJgg5YdPcMMaowyybVLWMMNQ==
