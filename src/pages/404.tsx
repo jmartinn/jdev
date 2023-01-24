@@ -6,13 +6,13 @@ export default function NotFound() {
     <Wrapper title="404 – Juan Pedro Martin">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          451 – Unavailable For Legal Reasons
+          404 – Not Found
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-8">
-          Why show a generic 404 when I can make it sound mysterious? It seems
-          you've found something that used to exist, or you spelled something
-          wrong. I'm guessing you spelled something wrong. Can you double check
-          that URL?
+          Oh no, it looks like you've stumbled upon a page that doesn't exist!
+          But don't worry, you haven't fallen into a black hole or anything.
+          It's just a 404 error. Maybe try checking the URL for typos or try
+          going back to the homepage. 
         </p>
         <Link
           href="/"

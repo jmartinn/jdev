@@ -15,7 +15,8 @@ export default function Projects() {
           A collection of my work as a web developer, showcasing my attention to
           detail, creativity, and technical skills
         </p>
-        <div className="flex gap-6 flex-col md:flex-row">
+        <div className="base:grid-cols-1 mt-12 grid justify-center gap-8 md:grid-cols-2">
+          {/* Projects go here */}
         </div>
       </div>
     </Wrapper>
