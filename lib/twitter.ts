@@ -1,3 +1,5 @@
+import { Tweet } from "./types";
+
 export const getTweets = async (ids: string[]) => {
   if (ids.length === 0) {
     return [];
@@ -26,14 +28,14 @@ export const getTweets = async (ids: string[]) => {
   const tweets = await response.json();
 
   const getAuthorInfo = (author_id: number) => {
-    return tweets.includes.users.find((user) => user.id === author_id);
+    return tweets.includes.users.find((user: any) => user.id === author_id);
   };
 
-  const getReferencedTweets = (mainTweet) => {
+  const getReferencedTweets = (mainTweet: Tweet) => {
     return (
       mainTweet?.referenced_tweets?.map((referencedTweet) => {
         const fullReferencedTweet = tweets.includes.tweets.find(
-          (tweet) => tweet.id === referencedTweet.id
+          (tweet: any) => tweet.id === referencedTweet.id
         );
 
         return {
@@ -46,12 +48,12 @@ export const getTweets = async (ids: string[]) => {
   };
 
   return (
-    tweets.data.reduce((allTweets, tweet) => {
+    tweets.data.reduce((allTweets: any, tweet: any) => {
       const tweetWithAuthor = {
         ...tweet,
         media:
-          tweet?.attachments?.media_keys.map((key) =>
-            tweets.includes.media.find((media) => media.media_key === key)
+          tweet?.attachments?.media_keys.map((key: any) =>
+            tweets.includes.media.find((media: any) => media.media_key === key)
           ) || [],
         referenced_tweets: getReferencedTweets(tweet),
         author: getAuthorInfo(tweet.author_id)

@@ -7,15 +7,23 @@ import { global } from "styled-jsx/css";
 // Learn more:
 // https://pris.ly/d/help/next-js-best-practices
 
+declare global {
+  namespace NodeJS {
+    interface Global {
+      prisma: any;
+    }
+  }
+}
+
 let prisma: PrismaClient;
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === 'production') {
   prisma = new PrismaClient();
 } else {
-  if (!global.prisma) {
-    global.prisma = new PrismaClient();
+  if (!(global as any).prisma) {
+    (global as any).prisma = new PrismaClient();
   }
-  prisma = global.prisma;
+  prisma = (global as any).prisma;
 }
 
 export default prisma;
