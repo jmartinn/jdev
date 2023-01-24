@@ -9,9 +9,9 @@ export default function NotFound() {
           404 – Not Found
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-8">
-          Oh no, it looks like you've stumbled upon a page that doesn't exist!
-          But don't worry, you haven't fallen into a black hole or anything.
-          It's just a 404 error. Maybe try checking the URL for typos or try
+          Oh no, it looks like you&apos;ve stumbled upon a page that doesn&apos;t exist!
+          But don&apos;t worry, you haven&apos;t fallen into a black hole or anything.
+          It&apos;s just a 404 error. Maybe try checking the URL for typos or try
           going back to the homepage. 
         </p>
         <Link

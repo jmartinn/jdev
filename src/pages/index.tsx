@@ -42,12 +42,12 @@ export default function Home() {
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               I love building tools that are user-friendly, simple and
               delightful. I studied in{" "}
-              <a href="https://medac.es/" target={"_blank"} className="basic-1">
+              <a href="https://medac.es/" target={"_blank"} rel="noreferrer" className="basic-1">
                 <b>MEDAC</b>
               </a>{" "}
               where I spent 2 years learning the fundamentals of both front-end
               and back-end web development. I also work at{" "}
-              <a href="https://interamplify.com/" target={"_blank"} className="basic-1">
+              <a href="https://interamplify.com/" target={"_blank"} rel="noreferrer" className="basic-1">
                 <b>Interamplify</b>
               </a>
               , where my role is re-design existing websites that uses older
