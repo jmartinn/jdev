@@ -71,7 +71,7 @@ export default function BlogLayout({ children, post }: Props) {
             </a>
             {` • `}
             <a
-              href="https://github.com/leerob/leerob.io/issues"
+              href="https://github.com/juampemartin/portfolio/issues"
               target="_blank"
               rel="noopener noreferrer"
             >
