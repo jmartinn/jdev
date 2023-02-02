@@ -48,7 +48,7 @@ export default function BlogLayout({ children, post }: Props) {
           </p>
         </div>
         <Suspense fallback={null}>
-          <div className="w-full mt-4 prose dark:prose-dark max-w-none">
+          <div className="w-full mt-4 prose dark:prose-dark max-w-none text-justify">
             {children}
           </div>
           <div className="mt-8 text-sm text-gray-700 dark:text-gray-300">
